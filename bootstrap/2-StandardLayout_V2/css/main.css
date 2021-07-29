@@ -1,0 +1,41 @@
+
+
+.wrapper > header { /* aplikuje se pouze na header, ktery je primym potomkem tridy wrapper */
+	background-color: burlywood;
+}
+
+.wrapper {
+    /* !!! ZKUSIT ZAKOMENTOVAT: max-width: 1140px; !!! */
+	max-width: 1140px;
+    
+    /* !!! ZKUSIT ZAKOMENTOVAT: margin: auto; !!! */
+    margin: auto;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container aside {
+	width: 15%;
+	min-width: 100px;
+}
+
+.container aside:nth-of-type(1) { /* ntý aside uvnitř třídy container */
+	background-color: aqua;
+}
+
+.container aside:nth-of-type(2) { /* ntý aside uvnitř třídy container */
+	background-color: #ae00ff;
+}
+
+.container article {
+	width: 70%;
+    min-width: 300px;
+    background-color: brown;
+}
+
+.wrapper footer {
+    background-color: pink;
+}
