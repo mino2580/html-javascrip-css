@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>dynamicky zoznam</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+<style>
+    .box{
+        padding:10px ;
+        width: 300px;
+        margin:5px 0;
+        border: 1px solid #ddd;
+    }
+    .box span{
+        width:20px;
+        height: 20px;
+        border: 1px solid red;
+        padding: 2px;
+        border-radius: 10px;
+        color: red; 
+        margin-left: 20px; 
+    }
+
+    .box span:hover{
+        cursor: pointer;
+        background-color: cornsilk;
+        color: black;
+    }
+
+
+    .confirmed{             /* //ak je polozka z jsona true */
+         color: green;
+       
+    }
+    .notConfirmed{    /* //ak je polozka z jsona false */
+         color: red;
+         
+    }
+
+</style>
+
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Javascript</h1>
+        <div class="output"></div>
+        <script src="app16.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+[
+    {
+      "name": {
+        "first": "Laurence",
+        "last": "Svekis"
+      },
+      "age": "vek 40",
+      "location": {
+        "city": "Toronto,",
+        "country": "Canada"
+      }
+    },
+    {
+      "name": {
+        "first": "Lisa",
+        "last": "Suekis"
+      },
+      "age": "vek 25",
+      "location": {
+        "city": "New York,",
+        "country": "USA"
+      }
+    },
+    {
+      "name": {
+        "first": "Johyn",
+        "last": "Sekis"
+      },
+      "age": "vek 45",
+      "location": {
+        "city": "New York,",
+        "country": "USA"
+      }
+    },
+    {
+      "name": {
+        "first": "Milan",
+        "last": "Mojžiščak"
+      },
+      "age": "vek 32",
+      "location": {
+        "city": "Turzovka,",
+        "country": "Slovensko"
+      }
+    }
+   
+  
+  ]
