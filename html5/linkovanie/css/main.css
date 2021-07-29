@@ -1,0 +1,28 @@
+
+/* .class selector */
+.classexample { 
+    background-color: yellow;
+}
+
+/* #id selector */
+#mycustomp { 
+    background-color: red;
+}
+
+/* * selector */
+div * {
+    font-weight: bold;
+}
+
+/* element selector */
+li { 
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}
+
+/* multi-elements selector */
+h1, h2, h3 { 
+    background-color: darkgreen;
+    color: white;
+}

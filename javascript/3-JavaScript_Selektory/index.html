@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <!--   begin -->
+    <h1 id="myH1ID">Výchozí text H1</h1>
+    <h2 id="myH2ID">Výchozí text H2</h2>
+    <h3 id="myH3ID">Výchozí text H3</h3>
+    <h4 id="myH4ID">Výchozí text H4</h4>
+
+    <br>
+
+    <button>Výchozí text tlačítka</button>
+    <button>Výchozí text tlačítka</button>
+
+    <br>
+    <br>
+
+    <div id="myDIV1" style="border-top: 1px solid; border-bottom: 1px solid">
+        <p class="myPClass">
+            Výchozí text
+        </p>
+
+        <p class="myPClass">
+            Výchozí text
+        </p>
+
+        <p class="myPClass">
+            Výchozí text
+        </p>
+    </div>
+
+    <div id="myDIV2" style="border-bottom: 1px solid">
+        <p class="myPClass">
+            Výchozí text
+        </p>
+
+        <p class="myPClass">
+            Výchozí text
+        </p>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <script>
+        // querySelectory ***************************************************************
+        // PROSTY querySelector: 
+        document.querySelector('#myH1ID').innerHTML = 'Text byl vložen z lokálního skriptu v index.html pomocí querySelectoru.';
+   // PROMENNA POMOCI querySelectoru:
+   var varElementQS = document.querySelector('#myH2ID');
+        varElementQS.innerHTML = 'Text byl vložen z lokálního skriptu v index.html pomocí querySelectoru.';
+  
+   // ZMENA PARAMETRU HTML ELEMENTU:
+        //varElement.setAttribute("parametr", "hodnota")
+        varElementQS.setAttribute("style", "background-color: blue; color: white;");
+
+   // USKALI GENERICKYCH/OBECNYCH querySelectoru
+    var firstButton = document.querySelector("button");
+      firstButton.innerHTML = 'Tlačítko 1';
+  
+      var secondButton = document.querySelector("button");
+        secondButton.innerHTML = 'Je to Tlačítko 2?';
+
+    // getElementById ***************************************************************
+        // PROSTY getElementById
+        document.getElementById('myH3ID').innerHTML = 'Text byl vložen z lokálního skriptu v index.html pomocí getElementById.';
+ 
+  // PROMENNA POMOCI getElementById
+  var varElementGEBI = document.getElementById('myH4ID');
+        varElementGEBI.innerHTML = 'Text byl vložen z lokálního skriptu v index.html pomocí getElementById.';
+
+   // ZMENA PARAMETRU HTML ELEMENTU:
+   varElementGEBI.setAttribute("style", "background-color: red;");
+
+   / HROMADNA ZMENA TEXTU V HTML ELEMENTECH TRIDY myPClass
+        // KTERE JSOU OBALENY DIVem myDIV1
+        var myElementArray = document.getElementById("myDIV1").querySelectorAll(".myPClass");
+        for (var i = 0; i < myElementArray.length; i++) 
+        {
+            myElementArray[i].innerHTML = "Text i = " + i;
+        }
+ 
+       // HROMADNA ZMENA TLOUSTKY PISMA VE VSECH HTML ELEMENTECH TRIDY myPClass
+       var myAllPElementArray = document.getElementsByClassName("myPClass");
+        for (var j = 0; j < myAllPElementArray.length; j++) 
+        {
+            myAllPElementArray[j].setAttribute("style", "font-weight: bold;");
+        }  
+ 
+ </script>
+
+    <script src="js/main.js" async defer></script>
+</body>
+
+</html>

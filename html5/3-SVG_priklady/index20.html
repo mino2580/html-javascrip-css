@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="300" height="200">
+  <polygon id="mypolygon" points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+Sorry, your browser does not support inline SVG.
+</svg>
+ 
+<input type="button" onclick="changepolygonpoints()" value="Změň body polygonu">
+ 
+<script>
+  function changepolygonpoints() 
+  {
+    document.getElementById("mypolygon").setAttribute("points", "0,0 100,0 100, 100 0, 100");
+  }
+</script>
+ 
+</body>
+</html>
